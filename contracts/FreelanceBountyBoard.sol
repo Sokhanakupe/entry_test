@@ -41,8 +41,23 @@ contract FreelanceBountyBoard {
     // - How do you remember who applied for which bounty?
 
     constructor() {
-        owner = msg.sender;
+        owner = msg.sender;FreelancerRegistered,WorkSubmitted,BountyPaid
+   struct(FreelancerRegistered,AppliedForBounty,WorkSubmitted);
+   registerFreelancer Store [calldata];
+   revert if string = 0;
+   Emit FreelancerRegistered(msg.sender,skill);
+   function{
+    string(calldata skill)
+    external{
+        constructor() {
+        owner = msg.sender;FreelancerRegistered,WorkSubmitted,BountyPaid
+   struct(FreelancerRegistered,AppliedForBounty,WorkSubmitted);
+
     }
+   }
+   }
+   
+    
 
     // -----------------------------------------------------------------------
     // TODO 1: registerFreelancer
@@ -54,6 +69,22 @@ contract FreelanceBountyBoard {
     // - Emit FreelancerRegistered(msg.sender, skill)
     function registerFreelancer(string calldata skill) external {
         // Your implementation here
+        constructor() {
+        owner = msg.sender;FreelancerRegistered,WorkSubmitted,BountyPaid
+   struct(FreelancerRegistered,AppliedForBounty,WorkSubmitted);
+   registerFreelancer Store [calldata];
+   revert if string = 0;
+   Emit FreelancerRegistered(msg.sender,skill);
+   function{
+    string(calldata skill)
+    external{
+        constructor() {
+        owner = msg.sender;FreelancerRegistered,WorkSubmitted,BountyPaid
+   struct(FreelancerRegistered,AppliedForBounty,WorkSubmitted);
+
+    }
+   }
+   }
     }
 
     // -----------------------------------------------------------------------
@@ -74,6 +105,11 @@ contract FreelanceBountyBoard {
         returns (uint256)
     {
         // Your implementation here
+        employer(msg.value if = revert);
+        bountyCount( id = bountyId + bountyCount);
+        Store [employer,description,skillRequired,amount, Status.Open];
+        Emit BountyPosted(bountyId,msg.sender,msg.value);
+        Return (bountyId);
     }
 
     // -----------------------------------------------------------------------
@@ -90,6 +126,10 @@ contract FreelanceBountyBoard {
     //   keccak256(bytes(a)) == keccak256(bytes(b))
     function applyForBounty(uint256 bountyId) external {
         // Your implementation here
+        Caller = (registered + skillRequired);
+        bounty = (exist + Open);
+        Revert (hasApplied);
+        Emit(AppliedForBounty);
     }
 
     // -----------------------------------------------------------------------
@@ -102,6 +142,12 @@ contract FreelanceBountyBoard {
     // - Emit WorkSubmitted(bountyId, msg.sender, submissionUrl)
     function submitWork(uint256 bountyId, string calldata submissionUrl) external {
         // Your implementation here
+        Caller(applyForBounty);
+        bounty(Open);
+        status(Submitted);
+        Emit(WorkSubmitted(bountyId,msg.sender,submissionUrl));
+
+        
     }
 
     // -----------------------------------------------------------------------

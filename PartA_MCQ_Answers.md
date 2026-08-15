@@ -56,11 +56,9 @@ database?"*
 - **D)** "Because a database can only handle a few thousand users, and
   blockchains scale infinitely."
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
-**Your Reasoning:**
-[2-3 sentences. What is the actual property a blockchain provides here? Name one
-honest cost of choosing it.]
+**Your Reasoning:** Blockchain,allows for anyone to check and verify the ledger. It is also permissionless meaning no entity can freeze or withhold your assests.
 
 ---
 
@@ -79,16 +77,13 @@ You send a simple ETH transfer on Ethereum.
 - **C)** 0.00042 ETH (about $1.26)
 - **D)** 0.0042 ETH (about $12.60)
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** C
 
-**Your Calculation:**
+**Your Calculation:** - Total gas cost in gwei = 21,000 x 20 = 420,000 gwei
+- Converted to ETH (remember: 1 ETH = 1,000,000,000 gwei) = 420,000 gwei would be 0.000,420,000 ETH with all decimal places included
+- Converted to USD = 0,00042 x $3,000 = $1.26
 
-- Total gas cost in gwei = [show your working]
-- Converted to ETH (remember: 1 ETH = 1,000,000,000 gwei) = [show your working]
-- Converted to USD = [show your working]
-
-[Then, in one or two sentences: why does a smart contract function that writes
-to storage cost far more than this simple transfer?]
+This is because the it needs to be stored on all the nodes on the network which takes a lot of compute and storage.
 
 ---
 
@@ -109,12 +104,9 @@ Your smart contract needs to know the current ETH/USD price.
   in a future upgrade.
 - **D)** Because API providers block blockchain nodes for security reasons.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
-**Your Reasoning:**
-[2-3 sentences. Why would a single company running the only oracle undermine the
-point of building on a blockchain? What does a decentralised oracle network do
-about that?]
+**Your Reasoning:** The oracle does not undermine the blockchain. This method of allow all the nodes in the network to read the same stored value. Without it nodes would read the API at different times which may result in different values being read.
 
 ---
 
@@ -133,11 +125,9 @@ about that?]
   attacker their own stake. The cost of that stake is also what makes Sybil
   attacks - one actor spinning up thousands of fake nodes - uneconomic.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** D
 
-**Your Reasoning:**
-[2-3 sentences. What does an attacker actually need to acquire to threaten a PoS
-chain, and what do they stand to lose? Name one difference from Proof of Work.]
+**Your Reasoning:** In order to acquire a proof of stake chain the attacker needs to invest their own capital. Other nodes in the network are also can verify the validity of their misbehaviour and their stake is burned. The cost of getting control of a block is uneconomical and you stand to lose more than you gain thus deincentivising you to do it at all.
 
 ---
 
@@ -157,11 +147,9 @@ chain, and what do they stand to lose? Name one difference from Proof of Work.]
 - **D)** It reduces gas costs by lowering the base fee on Ethereum itself
   whenever the rollup is active.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** A
 
-**Your Reasoning:**
-[2-3 sentences. Most rollups today run a single centralised sequencer. What can
-that sequencer do to you, and what can it *not* do?]
+**Your Reasoning:** Rollups do can assist you in getting cheaper gas prices. It cannot change the blockchain and host attacks.
 
 ---
 
@@ -184,11 +172,9 @@ them.
 - **D)** The seed phrase is just a backup of your public address, which is why it
   is safe to share with support staff if you get stuck.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** C
 
-**Your Reasoning:**
-[2-3 sentences. What does a signature prove? What is the trade-off a user accepts
-by holding their own keys, and what does account abstraction do to soften it?]
+**Your Reasoning:** A signature proves that this is transaction is made by the verified account holder. The trade off is that this signature is not held by any central authority so no entity can change it. Meaning if you lose your seed phrase your account is encrypted forever and your funds cannot be access.
 
 ---
 
@@ -223,12 +209,9 @@ uint256 index = uint256(
 - **D)** It is insecure on Ethereum but safe on a Layer 2, because the sequencer
   orders transactions privately.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
-**Your Reasoning:**
-[2-3 sentences. Who specifically can manipulate this draw, and what would they
-have to do? You will implement this shortcut in Part B anyway - so be clear
-about what you are shipping.]
+**Your Reasoning:** The proposer can introduce small bias. To fix this you need to swap the hash function.
 
 ---
 
@@ -262,11 +245,10 @@ function approveAndPay(uint256 bountyId, address freelancer) external {
 - **D)** The `require` on `msg.sender` should use `tx.origin` instead, so that
   contracts cannot call the function at all.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** C
 
 **Your Reasoning:**
-[2-3 sentences. Walk through the exact sequence an attacking contract would use.
-Then apply the fix in your own `approveAndPay` - it is auto-marked.]
+Pay first then check then correct to submit. This allows the ETH to transfer quicker before the work is done
 
 ---
 
@@ -280,4 +262,4 @@ Then apply the fix in your own `approveAndPay` - it is auto-marked.]
 ---
 
 **Challenges faced:** [What was difficult? Which concepts are you least
-confident about? Answering this honestly does not cost you marks.]
+confident about? Answering this honestly does not cost you marks.] The last two questions. More practice is needed.

@@ -23,7 +23,7 @@ is finished does not.
   three times the chance of winning?
 - How did you count unique players separately from total entries?
 
-[Write your response here]
+-I used an array to make the list of entries. I used a mapping to structure them for the randomness
 
 ---
 
@@ -35,7 +35,7 @@ is finished does not.
   would go wrong without those checks?
 - **Input validation:** what did you reject, and where?
 
-[Write your response here]
+
 
 ---
 
